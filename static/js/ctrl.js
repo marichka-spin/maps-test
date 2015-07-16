@@ -23,15 +23,6 @@ app.controller('maps-ctrl', function($scope) {
     };
 
     $scope.searchLocations = function() {
-        for (var i = 0; i < $scope.locations.length; i++) {
-            var location = $scope.locations[i];
-            if (location.name) {
-                location.map = getImgUrl(location.name);
-            }
-        }
-    };
-
-    $scope.searchLocations = function() {
         var _locations = $scope.locations;
         for (var i = 0; i < _locations.length; i++) {
             var location = _locations[i];
