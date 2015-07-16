@@ -1,0 +1,25 @@
+{
+    "name": "maps-test",
+    "version": "0.0.0",
+    "authors": [
+        "Mariia Senkiv <marichka.spin@gmail.com>"
+    ],
+    "description": "maps test app",
+    "main": "server.js",
+    "keywords": [
+        "maps"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "~1.4.3",
+        "jquery": "~2.1.4",
+        "bootstrap": "~3.3.5"
+    }
+}
