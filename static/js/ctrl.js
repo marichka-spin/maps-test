@@ -15,15 +15,11 @@ app.controller('maps-ctrl', function($scope) {
        }
     };
 
+    initLocations();
+
     var getImgUrl = function(locationName) {
         return 'http://maps.googleapis.com/maps/api/staticmap?center='
             + locationName + '&zoom=10&size=128x128&key=AIzaSyAxrGtGp1Dh3BDyuPHAR32qYDk3jiL3E6k';
-    };
-
-    initLocations();
-
-    $scope.updateImg = function() {
-        $scope.image = 'http://maps.googleapis.com/maps/api/staticmap?center=Львів&zoom=10&size=128x128&key=AIzaSyAxrGtGp1Dh3BDyuPHAR32qYDk3jiL3E6k';
     };
 
     $scope.searchLocations = function() {

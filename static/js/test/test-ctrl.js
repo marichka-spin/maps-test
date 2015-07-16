@@ -1,5 +1,5 @@
 describe('maps-ctrl', function() {
-    beforeEach(module('app'));
+    beforeEach(module('maps-app'));
 
     var $controller;
 
@@ -16,14 +16,14 @@ describe('maps-ctrl', function() {
             controller = $controller('maps-ctrl', { $scope: $scope });
         });
 
-        it('composes maps image url using entered location name', function() {
+        it('initLocations should add to array 4 empty locations', function() {
             expect($scope.locations.length).toEqual(4);
         });
 
-//        it('sets the strength to "weak" if the password length <3 chars', function() {
-//            $scope.password = 'a';
-//            $scope.grade();
-//            expect($scope.strength).toEqual('weak');
-//        });
+        it('composes maps image url using entered location name', function() {
+            var testName = 'test';
+            expect($scope.getImgUrl(testName))
+                .toEqual('http://maps.googleapis.com/maps/api/staticmap?center=test&zoom=10&size=128x128&key=AIzaSyAxrGtGp1Dh3BDyuPHAR32qYDk3jiL3E6k');
+        });
     });
 });
